@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.title {
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  font-size: 50px;
+  
+}
+
+.navigate {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 150px;
+  font-size: 25px;
+  margin-top: 200px;
+  padding-bottom: 150px;
+}
+
+.navigate a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+
+.navigate:hover {
+  cursor: pointer;
+  color: rgba(43, 127, 255, 1);
+ font-weight: 700;
+}
+
+
+.contact-us {
+  width: 100%;
+  
+    height: 250px;
+    background-color: rgba(1, 28, 68, 1);
+}
+
+.next-btn {
+  height: 53px;
+    width: 219px;
+    padding: 16px, 32px, 16px, 32px;
+    color: white;
+    background-color: rgba(43, 127, 255, 1);
+    gap: 10px;
+    border-radius: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    border: 2px solid rgba(43, 127, 255, 1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.next-btn:hover {
+  background-color: transparent;
+  border-color: rgba(43, 127, 255, 1);
+  color: rgba(1, 28, 68, 1);
+}
+
+.vehicle-Type{
+  height: 53px;
+    width: 219px;
+    padding: 16px, 32px, 16px, 32px;
+    color:rgba(43, 127, 255, 1);
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.vehicle-select {
+  height: 53px;
+  width: 219px;
+  padding: 16px, 32px, 16px, 32px;
+  color:rgba(43, 127, 255, 1);
+  gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.model-year {
+  height: 53px;
+  width: 219px;
+  padding: 16px, 32px, 16px, 32px;
+  color:rgba(43, 127, 255, 1);
+  gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.selectyear {
+  height: 53px;
+  width: 219px;
+  padding: 16px, 32px, 16px, 32px;
+  color:rgba(43, 127, 255, 1);
+  gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.car-select {
+  padding-left: 20px;
+  height: 53px;
+  width: 219px;
+  color:rgba(43, 127, 255, 1);
+  gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 40px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.models {
+  padding-left: 20px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
